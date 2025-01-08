@@ -1,5 +1,5 @@
 import React from 'react';
-import SideNav from '../SideNav';
+import SideNav from '../../SideNav';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 

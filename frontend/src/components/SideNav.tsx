@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes, FaUser, FaTachometerAlt, FaBook, FaCalendarAlt, FaEnvelope, FaHistory, FaQuestionCircle } from 'react-icons/fa';
+import {
+  FaBars,
+  FaTimes,
+  FaUser,
+  FaTachometerAlt,
+  FaBook,
+  FaCalendarAlt,
+  FaEnvelope,
+  FaHistory,
+  FaQuestionCircle,
+} from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import { Link } from 'react-router-dom';
 
@@ -15,7 +25,11 @@ const SideNav: React.FC = () => {
       {/* Top Navbar for Mobile */}
       <div className="md:hidden flex justify-between items-center bg-gray-800 p-4">
         <Link to="/" className="text-white flex items-center">
-          <img src="https://res.cloudinary.com/ddei3mzex/image/upload/v1729158010/crest_x1gutu.jpg" alt="Logo" className="h-10 w-auto" />        
+          <img
+            src="https://res.cloudinary.com/ddei3mzex/image/upload/v1729158010/crest_x1gutu.jpg"
+            alt="Logo"
+            className="h-10 w-auto"
+          />
         </Link>
         <button onClick={toggleMobileMenu} className="text-white focus:outline-none">
           {isMobile ? <FaTimes size="1.8em" /> : <FaBars size="1.8em" />}
@@ -30,7 +44,11 @@ const SideNav: React.FC = () => {
       >
         <div className="flex justify-center p-4">
           <Link to="/" className="text-white">
-            <img src="https://res.cloudinary.com/ddei3mzex/image/upload/v1729158010/crest_x1gutu.jpg" alt="Logo" className="h-10 w-auto" />
+            <img
+              src="https://res.cloudinary.com/ddei3mzex/image/upload/v1729158010/crest_x1gutu.jpg"
+              alt="Logo"
+              className="h-10 w-auto"
+            />
           </Link>
         </div>
         <Link to="/accounts" className="flex items-center p-4 hover:bg-gray-700">
@@ -40,7 +58,7 @@ const SideNav: React.FC = () => {
           <FaTachometerAlt className="mr-3" /> Dashboard
         </Link>
         <Link to="/courses" className="flex items-center p-4 hover:bg-gray-700">
-        <FaBook className="mr-3" /> Courses
+          <FaBook className="mr-3" /> Courses
         </Link>
         <Link to="/calendar" className="flex items-center p-4 hover:bg-gray-700">
           <FaCalendarAlt className="mr-3" /> Calendar
@@ -55,7 +73,7 @@ const SideNav: React.FC = () => {
           <FaQuestionCircle className="mr-3" /> Help
         </Link>
       </nav>
-      
+
       {/* Background overlay for mobile view */}
       {isMobile && (
         <div
