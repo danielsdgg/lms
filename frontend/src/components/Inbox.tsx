@@ -68,7 +68,7 @@ const Inbox: React.FC = () => {
       <SideNav />
       <div className="flex h-screen">
         {!selectedConversation || !isMobileView ? (
-          <div className="w-full md:w-1/4 bg-gray-100 border-r border-gray-300 p-4 overflow-y-auto">
+          <div className="w-full md:w-1/4 bg-blue-100 border-r border-gray-400 p-4 overflow-y-auto">
             <h2 className="text-lg font-semibold mb-4">Conversations</h2>
             {conversations.map((conversation) => (
               <div

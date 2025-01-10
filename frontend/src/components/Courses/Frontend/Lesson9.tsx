@@ -9,7 +9,8 @@ const Lesson9 = () => {
   return (
     <>
       <SideNav />
-      <div className="p-4 sm:p-8 bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 min-h-screen sm:pl-[200px] flex flex-col items-center sm:items-start">
+      <div className="flex-1 md:ml-16">
+      <div className="p-4 sm:p-8 bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 min-h-screen sm:pl-[250px] flex flex-col items-center sm:items-start">
         {/* Back Button */}
         <button
           onClick={() => navigate(-1)}
@@ -609,6 +610,7 @@ const Lesson9 = () => {
             </p>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

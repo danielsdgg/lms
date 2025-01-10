@@ -5,7 +5,7 @@ const Superdashboard = () => {
   return (
     <>
       <SideNav />
-      <div className="min-h-screen flex justify-center items-center bg-gradient-to-r from-gray-500 via-gray-400 to-gray-500">
+      <div className="min-h-screen flex justify-center items-center bg-gradient-to-r from-gray-700 via-gray-400 to-gray-700">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4 max-w-6xl w-full">
           {/* Lecturers Card */}
           <div className="bg-white shadow-lg rounded-lg p-4">

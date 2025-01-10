@@ -7,9 +7,9 @@ const Lesson11 = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='flex'>
+    <div className='flex p-6 bg-gradient-to-r md:ml-16'>
       <SideNav />
-      <div className="flex-1 p-6 bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 md:ml-16">
+      <div className="flex-1 p-6 bg-gradient-to-r sm:pl-[90px]">
         {/* Back Button */}
         <button
           onClick={() => navigate(-1)}

@@ -302,7 +302,7 @@ const Lesson7: React.FC = () => {
           </p>
         </section>
         <footer className="text-center mt-10 text-gray-500">
-          <p>© 2024 Morgan Technical Training. All rights reserved.</p>
+          <p>© 2025 Morgan Technical Training. All rights reserved.</p>
         </footer>
       </div>
     </div>

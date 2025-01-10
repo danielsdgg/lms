@@ -13,7 +13,7 @@ const Admindashboard = () => {
   return (
     <>
       <SideNav />
-      <div className="min-h-screen flex justify-center items-center bg-gradient-to-r from-green-500 via-yellow-500 to-orange-500">
+      <div className="min-h-screen flex justify-center items-center bg-gradient-to-r from-gray-700 via-gray-400 to-gray-700">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4 max-w-5xl w-full">
           {/* Students Not Enrolled Card */}
           <div className="bg-white shadow-lg rounded-lg p-4">

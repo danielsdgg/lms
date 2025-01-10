@@ -22,6 +22,8 @@ import Lesson12 from './components/Courses/Frontend/Lesson12';
 
 //   DATA SCIENCE ROUTES
 import Lesson1 from './components/Courses/Data Science/Lesson1';
+import Admindashboard from './Dashboards/Admindashboard';
+import Superdashboard from './Dashboards/Superdashboard';
 
 function App() {
 
@@ -39,6 +41,8 @@ function App() {
           <Routes>
             {/* Add your routes here */}
             <Route path="/" element={<Dashboard />} />
+            <Route path="/admin" element={<Admindashboard />} />
+            <Route path="/superadmin" element={<Superdashboard />} />
             <Route path="/courses" element={<CoursesPage />} />
             <Route path="/inbox" element={<Inbox />} />
             <Route path="/accounts" element={<Account />} />
