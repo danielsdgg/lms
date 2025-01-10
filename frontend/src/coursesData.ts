@@ -37,7 +37,7 @@ export interface Lesson {
         { id: "lesson9", title: "Lesson 3 - CSS Fundamentals and Flexbox/Grid" },
         { id: "lesson10", title: "Lesson 4 - JavaScript Basics" },
         { id: "lesson11", title: "Lesson 5 - React.js for Building Interactive UIs" },
-        { id: "lesson12", title: "Lesson 6 - Frontend Project: Building a Portfolio Website" },
+        { id: "lesson12", title: "Lesson 6 - Final Project" },
       ],
     },
     {

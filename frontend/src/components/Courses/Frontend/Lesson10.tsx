@@ -17,11 +17,17 @@ const Lesson10 = () => {
           <FaArrowLeft className="mr-2" />
           Back to Course
         </button>
-        <h1 className="text-center text-4xl font-bold text-blue-900 mb-6">Lesson 4 - JavaScript</h1>
+        <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center p-8">
+          <h1 className="text-4xl font-bold mb-2">
+            Javascript
+          </h1>
+            <p className="text-lg">
+              Introduction to javascript and the functionality of the website
+            </p>
+          </header>
 
         {/* Intro Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-center text-blue-700 mb-6">Introduction to JavaScript</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             JavaScript is a versatile and powerful programming language that enables dynamic behavior on websites and web applications. 
             It’s the backbone of modern interactive web experiences, allowing developers to create features like real-time updates, 

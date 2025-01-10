@@ -18,7 +18,14 @@ const Lesson11 = () => {
           <FaArrowLeft className="mr-2" />
           Back to Course
         </button>
-        <h1 className="text-center text-4xl font-bold text-blue-900 mb-6">Lesson 5 - React Fundamentals</h1>
+        <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center p-8">
+          <h1 className="text-4xl font-bold mb-2">
+            React
+          </h1>
+            <p className="text-lg">
+              Create outstanding websites and applications using react
+            </p>
+          </header>
 
         {/* Intro Section */}
         <section className="mb-12">

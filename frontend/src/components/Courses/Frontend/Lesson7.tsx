@@ -9,7 +9,7 @@ const Lesson7: React.FC = () => {
   return (
     <>
     <SideNav />
-    <div className="p-4 sm:p-8 bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 min-h-screen sm:pl-[200px] flex flex-col items-center sm:items-start">
+    <div className="p-4 sm:p-8 bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 min-h-screen sm:pl-[90px] flex flex-col items-center sm:items-start">
       {/* Back Button */}
       <button onClick={() => navigate(-1)}
       className="flex items-center text-gray-600 hover:text-blue-600 mb-6 transition-all duration-300 ease-in-out transform hover:scale-105">
@@ -17,14 +17,14 @@ const Lesson7: React.FC = () => {
         Back to Course
       </button>
       <div className="max-w-7xl mx-auto px-5">
-        <header className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-blue-900 mb-2">
+        <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center p-8">
+          <h1 className="text-4xl font-bold mb-2">
             Introduction to Web Development (Frontend)
           </h1>
-          <p className="text-lg text-gray-700">
-            A comprehensive guide to building stunning websites and user experiences.
-          </p>
-        </header>
+            <p className="text-lg">
+              A comprehensive guide to building stunning websites and user experiences.
+            </p>
+          </header>
 
 {/* Welcome Section */}
 <section className="bg-white shadow-lg rounded-lg p-8 mb-8">
@@ -292,6 +292,156 @@ const Lesson7: React.FC = () => {
             These activities are designed not only to deepen your understanding of the concepts covered in class but also to equip you with a portfolio of real-world projects that showcase your skills to potential employers.
           </p>
         </section>
+
+        {/* git */}
+        <div className="flex flex-col items-center px-4 md:px-20 lg:px-40 py-8 bg-white text-gray-800">
+
+      {/* Overview Section */}
+      <div className="mb-10">
+        <h2 className="text-2xl font-semibold mb-4">What is Git?</h2>
+        <p className="text-gray-700 leading-7">
+          Git is a distributed version control system that helps developers track changes in their codebase, collaborate with others, and manage project history effectively. Unlike centralized systems, Git allows every developer to have a complete copy of the repository, enabling offline access and seamless collaboration.
+        </p>
+        <p className="mt-4 text-gray-700 leading-7">
+          Git is essential for modern software development, allowing teams to work together efficiently while maintaining a robust history of changes.
+        </p>
+      </div>
+
+      {/* Setting Up Git */}
+      <div className="mb-10">
+        <h2 className="text-2xl font-semibold mb-4">Getting Started with Git</h2>
+        <p className="text-gray-700 leading-7">
+          To start using Git, follow these steps:
+        </p>
+        <ol className="list-decimal list-inside mt-4 space-y-2 text-gray-700">
+          <li>Download and install Git from the <a href="https://git-scm.com/" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">official Git website</a>.</li>
+          <li>Configure Git with your name and email:
+            <pre className="bg-gray-100 p-4 rounded-md mt-2 text-sm">
+              <code>
+                git config --global user.name "Your Name"{"\n"}
+                git config --global user.email "youremail@example.com"
+              </code>
+            </pre>
+          </li>
+          <li>Verify the installation:
+            <pre className="bg-gray-100 p-4 rounded-md mt-2 text-sm">
+              <code>
+                git --version
+              </code>
+            </pre>
+          </li>
+        </ol>
+      </div>
+
+      {/* Key Commands */}
+      <div className="mb-10">
+        <h2 className="text-2xl font-semibold mb-4">Essential Git Commands</h2>
+        <p className="text-gray-700 leading-7">
+          Here are the basic Git commands you'll use frequently:
+        </p>
+        <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
+          <li><strong>Initialize a Repository:</strong> <code>git init</code></li>
+          <li><strong>Clone a Repository:</strong> <code>git clone &lt;repository_url&gt;</code></li>
+          <li><strong>Check Status:</strong> <code>git status</code></li>
+          <li><strong>Stage Changes:</strong> <code>git add &lt;file_name&gt;</code> or <code>git add .</code> to stage all changes</li>
+          <li><strong>Commit Changes:</strong> <code>git commit -m "Commit message"</code></li>
+          <li><strong>View Commit History:</strong> <code>git log</code></li>
+          <li><strong>Create a Branch:</strong> <code>git branch &lt;branch_name&gt;</code></li>
+          <li><strong>Switch Branch:</strong> <code>git checkout &lt;branch_name&gt;</code></li>
+          <li><strong>Merge Branches:</strong> <code>git merge &lt;branch_name&gt;</code></li>
+          <li><strong>Push Changes:</strong> <code>git push origin &lt;branch_name&gt;</code></li>
+          <li><strong>Pull Changes:</strong> <code>git pull</code></li>
+        </ul>
+      </div>
+
+      {/* Emojis in Commits */}
+      <div className="mb-10">
+        <h2 className="text-2xl font-semibold mb-4">Using Emojis in Commit Messages</h2>
+        <p className="text-gray-700 leading-7">
+          Emojis make your commit messages more expressive and easier to understand. Here's a list of commonly used emojis:
+        </p>
+        <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
+          <li><code>✨</code> <strong>:sparkles:</strong> - Introducing new features</li>
+          <li><code>🐛</code> <strong>:bug:</strong> - Fixing a bug</li>
+          <li><code>📝</code> <strong>:memo:</strong> - Updating documentation</li>
+          <li><code>🔥</code> <strong>:fire:</strong> - Removing code/files</li>
+          <li><code>🚀</code> <strong>:rocket:</strong> - Deploying stuff</li>
+          <li><code>🎨</code> <strong>:art:</strong> - Improving structure/format of the code</li>
+        </ul>
+      </div>
+
+      {/* Collaboration */}
+      <div className="mb-10">
+        <h2 className="text-2xl font-semibold mb-4">Collaborating with Git</h2>
+        <p className="text-gray-700 leading-7">
+          Collaboration is one of Git's strengths. To work with others:
+        </p>
+        <ol className="list-decimal list-inside mt-4 space-y-2 text-gray-700">
+          <li>Fork the repository to your GitHub account.</li>
+          <li>Clone the forked repository to your local machine:
+            <pre className="bg-gray-100 p-4 rounded-md mt-2 text-sm">
+              <code>
+                git clone &lt;repository_url&gt;
+              </code>
+            </pre>
+          </li>
+          <li>Create a new branch for your changes:
+            <pre className="bg-gray-100 p-4 rounded-md mt-2 text-sm">
+              <code>
+                git checkout -b feature/branch-name
+              </code>
+            </pre>
+          </li>
+          <li>Make changes and commit them.</li>
+          <li>Push your branch and create a pull request.</li>
+        </ol>
+      </div>
+
+      {/* External Resources */}
+      <div className="mb-10">
+        <h2 className="text-2xl font-semibold mb-4">Learn More About Git</h2>
+        <ul className="list-disc list-inside mt-4 space-y-2 text-blue-600">
+          <li><a href="https://git-scm.com/doc" target="_blank" rel="noopener noreferrer">Official Git Documentation</a></li>
+          <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreferrer">Learn Git Branching (Interactive Tutorial)</a></li>
+          <li><a href="https://www.atlassian.com/git/tutorials" target="_blank" rel="noopener noreferrer">Atlassian Git Tutorials</a></li>
+        </ul>
+      </div>
+    </div>
+
+    {/* vs code */}
+    <div className="flex flex-col items-center px-4 md:px-20 lg:px-40 py-8 bg-white text-gray-800 mt-9">
+  <h3 className="text-xl underline font-bold text-blue-600 mb-6 text-center">Visual Studio Code</h3>
+  <p className="text-gray-700 mb-6">
+    Visual Studio Code (VS Code) is a powerful and lightweight code editor that’s widely used by developers. It’s free, open-source, and packed with features to help you write, test, and debug your code efficiently. Here’s how to get started with it:
+  </p>
+  
+  <h4 className="text-lg font-semibold text-gray-700 mb-2">Installing VS Code</h4>
+  <p className="text-gray-700 mb-6">
+    1. Go to the official website: <a href="https://code.visualstudio.com/" className="text-blue-500 underline">https://code.visualstudio.com/</a>.
+    <br />
+    2. Download the version for your operating system (Windows, macOS, or Linux).
+    <br />
+    3. Run the installer and follow the on-screen instructions to complete the installation.
+  </p>
+  
+  <h4 className="text-lg font-semibold text-gray-700 mb-2">Setting Up VS Code</h4>
+  <p className="text-gray-700 mb-6">
+    1. Launch VS Code after installation.
+    <br />
+    2. Install essential extensions like:
+      <ul className="list-disc list-inside text-gray-700">
+        <li><strong>Live Server:</strong> To preview your HTML files in the browser instantly.</li>
+        <li><strong>Prettier:</strong> To format your code for readability.</li>
+        <li><strong>ESLint:</strong> For linting and code quality checks.</li>
+      </ul>
+    3. Customize your theme and settings to make the environment comfortable for you.
+  </p>
+
+  <p className="text-gray-700 mb-6">
+    Now you’re ready to start coding! VS Code provides all the tools you need in one place, making it a great choice for frontend development.
+  </p>
+</div>
 
 
         {/* Conclusion */}

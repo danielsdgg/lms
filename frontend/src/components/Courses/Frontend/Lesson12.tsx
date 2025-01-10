@@ -183,16 +183,11 @@ const Lesson12: React.FC = () => {
               <form>
                 <input
                   type="url"
-                  placeholder="Deployed Website URL"
+                  placeholder="Deployed Website URL/Github Url"
                   className="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
-                <input
-                  type="url"
-                  placeholder="GitHub Repository URL"
-                  className="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                />
+
                 <button
                   type="submit"
                   className="w-full p-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"

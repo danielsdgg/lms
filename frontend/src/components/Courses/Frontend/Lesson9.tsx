@@ -19,7 +19,14 @@ const Lesson9 = () => {
           <FaArrowLeft className="mr-2" />
           Back to Course
         </button>
-        <h1 className="text-center text-4xl font-bold text-blue-900 mb-2">Lesson 3 - CSS Fundamentals & Flexbox/Grid</h1>
+        <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center p-8">
+          <h1 className="text-4xl font-bold mb-2">
+            Introduction to CSS
+          </h1>
+            <p className="text-lg">
+              Styling and modifying our website
+            </p>
+          </header>
           
         {/* Intro Section */}
         <section className="mb-12">
