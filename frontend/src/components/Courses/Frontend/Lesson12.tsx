@@ -187,6 +187,11 @@ const Lesson12: React.FC = () => {
                   className="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />
+                          {/* <div className="bg-yellow-100 border-l-4 border-yellow-400 p-4 mt-6">
+            <p className="text-gray-800">
+              <strong>Tip:</strong> Don't forget to use browser developer tools to inspect and debug your design at various screen sizes. Take your time and experiment with different layouts!
+            </p>
+          </div> */}
 
                 <button
                   type="submit"

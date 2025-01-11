@@ -77,7 +77,6 @@ const Lesson8 = () => {
           </p>
             </div>
           </div>
-
         </section>
 
         {/* Week 1 */}
@@ -926,10 +925,222 @@ const Lesson8 = () => {
   </p>
 </div>
 
+{/* day 3 */}
+        {/* Getting Started Section */}
+        <div className="mb-8 bg-gray-100 p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+          <h2 className="text-xl underline font-bold text-blue-600 text-center mb-6">Day 3: Getting Started with CSS</h2>
+          
+          {/* CSS Installation */}
+          <h3 className="text-xl font-bold text-gray-800 mb-4">1. Setting Up CSS</h3>
+          <p className="text-gray-800 mb-4 leading-relaxed">
+            To begin using CSS in your project, you need to link a CSS file in your HTML document. Here's how:
+          </p>
+          <pre className="bg-gray-800 text-white p-4 rounded mb-6">
+            {`<!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>My First CSS Page</title>
+          <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+          <h1>Hello, World!</h1>
+        </body>
+        </html>`}
+          </pre>
+            
+          <p className="text-gray-800 mb-4 leading-relaxed">
+            Save your CSS rules in a <code>styles.css</code> file, and the above link will style your web page accordingly.
+          </p>
+          <h4 className="text-lg font-semibold text-blue-600">CSS Syntax</h4>
+            <p className="text-gray-800 mb-4">
+              A CSS rule consists of a selector and a declaration block. The selector targets the HTML element(s), and the declaration block defines the styles to apply. Here's an example:
+            </p>
+            <pre className="bg-gray-800 text-white p-4 rounded">
+              {`body {
+                font-family: Arial, sans-serif;
+                color: #333;
+                margin: 0;
+                padding: 0;
+              }`}
+            </pre>
+
+            <h4 className="text-lg font-semibold text-blue-600 mt-6">CSS Selectors</h4>
+            <p className="text-gray-800 mb-4">
+              CSS selectors are patterns used to select the elements you want to style. Common selectors include:
+            </p>
+            <ul className="list-disc list-inside text-gray-800">
+              <li><code>Type Selector</code>: Targets HTML tags (e.g., <code>p</code>, <code>div</code>).</li>
+              <li><code>Class Selector</code>: Targets elements with a specific class (e.g., <code>.example</code>).</li>
+              <li><code>ID Selector</code>: Targets a specific element with an ID (e.g., <code>#header</code>).</li>
+              <li><code>Group Selector</code>: Targets multiple selectors (e.g., <code>h1, h2, h3</code>).</li>
+              <li><code>Descendant Selector</code>: Targets elements inside a container (e.g., <code>.container p</code>).</li>
+            </ul>
+
+            <h4 className="text-lg font-semibold text-blue-600 mt-6">The Box Model</h4>
+            <p className="text-gray-800 mb-4">
+              The box model describes the layout and spacing of an element. It includes:
+            </p>
+            <ul className="list-disc list-inside text-gray-800">
+              <li><strong>Content:</strong> The inner area where text and images appear.</li>
+              <li><strong>Padding:</strong> Space between content and the border.</li>
+              <li><strong>Border:</strong> The boundary around the padding.</li>
+              <li><strong>Margin:</strong> Space outside the border separating the element from others.</li>
+            </ul>
+            <p className="text-gray-800 mt-4">
+              For example, if you style a box with <code>margin</code>, <code>padding</code>, and <code>border</code>, it might look like this:
+            </p>
+            <pre className="bg-gray-800 text-white p-4 rounded">
+              {`div {
+                margin: 20px;
+                padding: 10px;
+                border: 2px solid #000;
+              }`}
+            </pre>
+          </div>
+
+          {/* day 4 */}
+          <div className="mb-8 bg-gray-100 p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+            <h3 className="text-xl underline font-bold text-blue-600 text-center mb-6">DAY 4: Understanding the Box Model</h3>
+            <p className="text-gray-800 mb-4">
+              The CSS box model is a fundamental concept that defines how elements are structured and spaced in a web page. It consists of four main areas:
+            </p>
+            <ul className="list-disc list-inside text-gray-800 mb-4">
+              <li><strong>Content:</strong> The innermost part where text and other elements appear.</li>
+              <li><strong>Padding:</strong> The space between the content and the border.</li>
+              <li><strong>Border:</strong> The edge surrounding the padding (or content if padding is not applied).</li>
+              <li><strong>Margin:</strong> The outermost layer that creates space between the element and others.</li>
+            </ul>
+            <p className="text-gray-800 mb-4">
+              For example, consider the following CSS code:
+            </p>
+            <pre className="bg-gray-800 text-white p-4 rounded">
+              {`div {
+              width: 200px;
+              padding: 20px;
+              border: 5px solid #000;
+              margin: 10px;
+              }`}
+            </pre>
+            <p className="text-gray-800 mt-4">
+              In Tailwind CSS, you can replicate this styling using utility classes. For example:
+            </p>
+            <pre className="bg-gray-800 text-white p-4 rounded">
+              {`<div className="w-52 p-5 border-2 border-black m-2">
+              This is a Tailwind CSS styled div.
+              </div>`}
+            </pre>
+            <div className="bg-gray-200 p-5 border-2 border-gray-500 m-4 rounded shadow-md">
+              <p className="font-sans text-gray-800">This div demonstrates the box model with padding, border, and margin in Tailwind CSS.</p>
+            </div>
+            <p className="text-gray-800 mt-4">
+              The box model plays a crucial role in layout design. Practice by experimenting with different <code>width</code>, <code>padding</code>, <code>margin</code>, and <code>border</code> values to understand their effects.
+            </p>
+            <p className="text-gray-800 mt-4">
+              Additionally, tools like browser developer tools can help visualize the box model for any element. Right-click an element on a webpage, inspect it, and observe the box model diagram in the "Elements" tab.
+            </p>
+          </div>
+
+          {/* day 5 */}
+          <div className="mb-8 bg-gray-100 p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+            <h3 className="text-xl text-center font-bold text-blue-700">
+              DAY 5: Flexbox & Grid
+            </h3>
+            <p className="text-gray-800 mb-4">
+              Flexbox and Grid are not mutually exclusive; they can be combined to create highly flexible and powerful layouts. This combination is especially useful when creating complex designs with both rows and columns while maintaining precise alignment of elements.
+            </p>
+
+            <h4 className="text-lg font-semibold text-blue-600 mt-4">
+              Why Combine Flexbox & Grid?
+            </h4>
+            <ul className="list-disc ml-6 text-gray-800">
+              <li>
+                Use Grid for the overall layout structure, such as dividing the page into rows and columns.
+              </li>
+              <li>
+                Use Flexbox for precise alignment and spacing of items within each grid cell.
+              </li>
+            </ul>
+
+            <h4 className="text-lg font-semibold text-blue-600 mt-4">Code Example:</h4>
+            <p className="text-gray-800 mb-4">
+              Here's an example of combining Grid for the overall structure and Flexbox for aligning content:
+            </p>
+            <pre className="bg-gray-800 text-white p-4 rounded">
+              {`<div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '20px' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Box 1</div>
+            <div>Box 2</div>
+          </div>`}
+            </pre>
+            <p className="text-gray-800 mt-4">
+              In Tailwind CSS, this can be achieved using:
+              <code className="bg-gray-100 p-1 rounded mx-1">grid grid-cols-2 gap-5</code> for the grid layout and
+              <code className="bg-gray-100 p-1 rounded mx-1">flex justify-center items-center</code> for aligning content within the flex container.
+            </p>
+              
+            <div className="grid grid-cols-2 gap-5 bg-yellow-200 p-5 rounded mt-4">
+              <div className="flex justify-center items-center bg-white p-4 border">Box 1</div>
+              <div className="bg-white p-4 border">Box 2</div>
+            </div>
+              
+            <h4 className="text-lg font-semibold text-blue-600 mt-4">Practical Applications:</h4>
+            <p className="text-gray-800">
+              Combining Flexbox and Grid is ideal for:
+            </p>
+            <ul className="list-disc ml-6 text-gray-800 mt-2">
+              <li>Dashboard layouts with cards and charts</li>
+              <li>Product grids with centered content</li>
+              <li>Responsive layouts where alignment and spacing need fine-tuning</li>
+            </ul>
+              
+            <h4 className="text-lg font-semibold text-blue-600 mt-4">Advanced Example:</h4>
+            <p className="text-gray-800">
+              Let's create a layout with a header, sidebar, and main content area where Flexbox is used inside the grid cells for alignment:
+            </p>
+            <pre className="bg-gray-800 text-white p-4 rounded">
+              {`<div style={{ display: 'grid', gridTemplateColumns: '1fr 3fr', gap: '10px' }}>
+            <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <h1>Logo</h1>
+              <nav>Navigation</nav>
+            </header>
+            <aside>Sidebar</aside>
+            <main>Main Content</main>
+          </div>`}
+            </pre>
+              
+            <div className="grid grid-cols-2 gap-5 bg-yellow-200 p-5 rounded mt-4">
+              <header className="flex justify-between items-center bg-white p-4 border col-span-2">
+                <h1 className="font-bold">Logo</h1>
+                <nav>Navigation</nav>
+              </header>
+              <aside className="bg-white p-4 border">Sidebar</aside>
+              <main className="bg-white p-4 border">Main Content</main>
+            </div>
+              
+            <h4 className="text-lg font-semibold text-blue-600 mt-4">Try It Yourself:</h4>
+            <div className="bg-gray-100 p-4 rounded mt-2">
+              <p className="text-gray-800">
+                Create a responsive product grid with centered content using this concept:
+              </p>
+              <pre className="bg-gray-800 text-white p-4 rounded mt-2">
+                {`<div class="grid grid-cols-3 gap-4">
+                <div class="flex justify-center items-center bg-gray-300 h-24">Product 1</div>
+                <div class="flex justify-center items-center bg-gray-300 h-24">Product 2</div>
+                <div class="flex justify-center items-center bg-gray-300 h-24">Product 3</div>
+                </div>`}
+              </pre>
+            </div>
+          </div>
+
+          {/* week 3 */}
 
 {/* Assignment */}
-<div className="bg-gray-100 p-8 rounded-lg shadow-xl max-w-3xl mx-auto">
-  <h3 className="text-2xl text-1xl font-medium text-white bg-gradient-to-r from-orange-400 via-black to-orange-400 p-8 mb-4 text-center">End of Lesson 2 Assignment - HTML</h3>
+<div className="bg-gray-100 p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+  <h3 className="text-2xl font-medium text-white  mb-4 text-center bg-gradient-to-r from-green-600 via-black to-purple-600 p-8">WEEK 3 : Project Week</h3>
+  <h3 className="text-xl text-1xl font-medium text-white bg-gradient-to-r from-orange-400 via-black to-orange-400 p-8 mb-4 text-center">Html & Css Project</h3>
+
+
   <p className="text-gray-700 mb-6">
     For this assignment, create a complete webpage that demonstrates your understanding of HTML and all the concepts we've covered in Week 1 and Week 2. Your webpage should include the following features:
   </p>
@@ -997,7 +1208,6 @@ const Lesson8 = () => {
     Keep pushing forward, and don’t be afraid to try new things. The best frontend developers are always learning and growing. You’re on the right path, and your future in web development is bright!
   </p>
 </div>
-
         </section>
         </div>
       </div>

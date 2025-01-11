@@ -33,8 +33,8 @@ export interface Lesson {
       duration: "6 months",
       lessons: [
         { id: "lesson7", title: "Lesson 1 - Introduction to Web Development" },
-        { id: "lesson8", title: "Lesson 2 - HTML Basics and Advanced" },
-        { id: "lesson9", title: "Lesson 3 - CSS Fundamentals and Flexbox/Grid" },
+        { id: "lesson8", title: "Lesson 2 - HTML & CSS Basics" },
+        { id: "lesson9", title: "Lesson 3 - Website project with tailwindcss" },
         { id: "lesson10", title: "Lesson 4 - JavaScript Basics" },
         { id: "lesson11", title: "Lesson 5 - React.js for Building Interactive UIs" },
         { id: "lesson12", title: "Lesson 6 - Final Project" },
