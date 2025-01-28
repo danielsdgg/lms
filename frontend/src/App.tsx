@@ -11,6 +11,7 @@ import Account from './components/Accounts';
 import LessonDetails from './components/LessonDetails';
 import CourseDetails from './components/CourseDetails';
 import CoursesPage from './components/CoursesPage';
+import Grade from './components/Grade';
 
 //   FRONTEND ROUTES
 import Lesson7 from './components/Courses/Frontend/Lesson7';
@@ -61,6 +62,7 @@ function App() {
             <Route path="/help" element={<Help />} />
             <Route path="/create-course" element={<CreateCourse />} />
             <Route path="/calendar" element={<Calendar />} />
+            <Route path="/grades" element={<Grade />} />
             <Route path="/courses/:courseId" element={<CourseDetails />} />
             <Route path="/courses/:courseId/lessons/:lessonId" element={<LessonDetails />} />
 

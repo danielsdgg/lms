@@ -1,5 +1,6 @@
 import React from 'react';
 import SideNav from '../components/SideNav';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   return (
@@ -51,9 +52,9 @@ const Dashboard = () => {
               <p className="text-gray-600 text-sm sm:text-base">Nothing for now</p>
             </div>
 
-            <button className="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition text-sm sm:text-base">
+            <Link to={'/grades'}><button className="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition text-sm sm:text-base">
               View Grades
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>
