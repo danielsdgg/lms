@@ -30,7 +30,7 @@ export interface Lesson {
       id: 2,
       title: "Frontend Development",
       description: "Master the art of creating visually appealing and responsive web interfaces.",
-      duration: "6 months",
+      duration: "3 months",
       lessons: [
         { id: "lesson7", title: "Lesson 1 - Introduction to Web Development" },
         { id: "lesson8", title: "Lesson 2 - HTML & CSS Basics" },

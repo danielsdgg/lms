@@ -23,19 +23,25 @@ import Lesson12 from './components/Courses/Frontend/Lesson12';
 
 //   DATA SCIENCE ROUTES
 import Lesson1 from './components/Courses/Data Science/Lesson1';
+
 import Admindashboard from './Dashboards/Admindashboard';
 import Superdashboard from './Dashboards/Superdashboard';
-import Day1 from './components/pages/frontendpages/lesson2/Day1';
-import Day2 from './components/pages/frontendpages/lesson2/Day2';
-import Day3 from './components/pages/frontendpages/lesson2/Day3';
-import Day4 from './components/pages/frontendpages/lesson2/Day4';
-import Day5 from './components/pages/frontendpages/lesson2/Day5';
-import Day6 from './components/pages/frontendpages/lesson2/Day6';
-import Day7 from './components/pages/frontendpages/lesson2/Day7';
-import Day8 from './components/pages/frontendpages/lesson2/Day8';
-import Day9 from './components/pages/frontendpages/lesson2/Day9';
-import Day10 from './components/pages/frontendpages/lesson2/Day10';
-import Project2 from './components/pages/frontendpages/lesson2/Project2';
+// lesson 1 frontend
+import Day1 from './components/pages/frontendpages/lesson1/Day1';
+import Day2 from './components/pages/frontendpages/lesson1/Day2';
+import Day3 from './components/pages/frontendpages/lesson1/Day3';
+// lesson 2 frontend
+// import Day1 from './components/pages/frontendpages/lesson2/Day1';
+// import Day2 from './components/pages/frontendpages/lesson2/Day2';
+// import Day3 from './components/pages/frontendpages/lesson2/Day3';
+// import Day4 from './components/pages/frontendpages/lesson2/Day4';
+// import Day5 from './components/pages/frontendpages/lesson2/Day5';
+// import Day6 from './components/pages/frontendpages/lesson2/Day6';
+// import Day7 from './components/pages/frontendpages/lesson2/Day7';
+// import Day8 from './components/pages/frontendpages/lesson2/Day8';
+// import Day9 from './components/pages/frontendpages/lesson2/Day9';
+// import Day10 from './components/pages/frontendpages/lesson2/Day10';
+// import Project2 from './components/pages/frontendpages/lesson2/Project2';
 
 function App() {
 
@@ -78,7 +84,12 @@ function App() {
             <Route path="/courses/:courseId/lessons/lesson12" element={<Lesson12/>} />
 
             {/* frontend pages here */}
-            <Route path="/fdl2day1" element={<Day1/>} />
+            {/* lesson 1 */}
+            <Route path="/fdl1day1" element={<Day1/>} />
+            <Route path='/fdl1day2' element={<Day2/>} />
+            <Route path="/fdl1day3" element={<Day3/>} />
+            {/* lesson 2 */}
+            {/* <Route path="/fdl2day1" element={<Day1/>} />
             <Route path="/fdl2day2" element={<Day2/>} />
             <Route path="/fdl2day3" element={<Day3/>} />
             <Route path="/fdl2day4" element={<Day4/>} />
@@ -88,7 +99,7 @@ function App() {
             <Route path="/fdl2day8" element={<Day8/>} />
             <Route path="/fdl2day9" element={<Day9/>} />
             <Route path="/fdl2day10" element={<Day10/>} />
-            <Route path="/lesson2project" element={<Project2/>} />
+            <Route path="/lesson2project" element={<Project2/>} /> */}
 
             {/* backend pages here*/}
 

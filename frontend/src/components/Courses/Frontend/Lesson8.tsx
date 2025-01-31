@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom"; // Ensure react-router-dom is installed
+import { Link, useNavigate } from "react-router-dom";
 import SideNav from "../../SideNav";
 import { FaArrowLeft } from "react-icons/fa";
 
@@ -8,9 +8,8 @@ const Lesson8 = () => {
 
   const [openWeek, setOpenWeek] = useState<number | null>(null);
 
-  // Show all dropdown links by default on component mount
   useEffect(() => {
-    setOpenWeek(1); // Default to opening Week 1
+    setOpenWeek(1); 
   }, []);
 
   // Toggle the dropdown content
